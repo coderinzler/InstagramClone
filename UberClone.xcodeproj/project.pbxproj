@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		846003FE2A1FFE64005D3FEA /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846003FD2A1FFE64005D3FEA /* MainTabView.swift */; };
+		846004002A200821005D3FEA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846003FF2A200821005D3FEA /* ProfileView.swift */; };
 		84F8BB7E2A1CB5FF0049BDEF /* UberCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F8BB7D2A1CB5FF0049BDEF /* UberCloneApp.swift */; };
 		84F8BB802A1CB5FF0049BDEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F8BB7F2A1CB5FF0049BDEF /* ContentView.swift */; };
 		84F8BB822A1CB6010049BDEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F8BB812A1CB6010049BDEF /* Assets.xcassets */; };
 		84F8BB852A1CB6010049BDEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F8BB842A1CB6010049BDEF /* Preview Assets.xcassets */; };
-		84F8BB8F2A1CB6010049BDEF /* UberCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F8BB8E2A1CB6010049BDEF /* UberCloneTests.swift */; };
-		84F8BB992A1CB6010049BDEF /* UberCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F8BB982A1CB6010049BDEF /* UberCloneUITests.swift */; };
-		84F8BB9B2A1CB6010049BDEF /* UberCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F8BB9A2A1CB6010049BDEF /* UberCloneUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,16 +33,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		846003FD2A1FFE64005D3FEA /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		846003FF2A200821005D3FEA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		84F8BB7A2A1CB5FF0049BDEF /* UberClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F8BB7D2A1CB5FF0049BDEF /* UberCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberCloneApp.swift; sourceTree = "<group>"; };
 		84F8BB7F2A1CB5FF0049BDEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		84F8BB812A1CB6010049BDEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84F8BB842A1CB6010049BDEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84F8BB8A2A1CB6010049BDEF /* UberCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		84F8BB8E2A1CB6010049BDEF /* UberCloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberCloneTests.swift; sourceTree = "<group>"; };
 		84F8BB942A1CB6010049BDEF /* UberCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		84F8BB982A1CB6010049BDEF /* UberCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberCloneUITests.swift; sourceTree = "<group>"; };
-		84F8BB9A2A1CB6010049BDEF /* UberCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,12 +69,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		846003F02A1FFA7A005D3FEA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				84F8BB7D2A1CB5FF0049BDEF /* UberCloneApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		846003F12A1FFA82005D3FEA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				846003F52A1FFBE0005D3FEA /* Feed */,
+				846003FA2A1FFC40005D3FEA /* UploadPost */,
+				846003F92A1FFC31005D3FEA /* TabBar */,
+				846003F42A1FFBD0005D3FEA /* Authentication */,
+				846003F82A1FFBF5005D3FEA /* Search */,
+				846003F72A1FFBEC005D3FEA /* Root */,
+				846003F62A1FFBE6005D3FEA /* Profile */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		846003F22A1FFAD8005D3FEA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		846003F32A1FFADD005D3FEA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		846003F42A1FFBD0005D3FEA /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		846003F52A1FFBE0005D3FEA /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		846003F62A1FFBE6005D3FEA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				846003FF2A200821005D3FEA /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		846003F72A1FFBEC005D3FEA /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		846003F82A1FFBF5005D3FEA /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		846003F92A1FFC31005D3FEA /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				846003FD2A1FFE64005D3FEA /* MainTabView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		846003FA2A1FFC40005D3FEA /* UploadPost */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UploadPost;
+			sourceTree = "<group>";
+		};
 		84F8BB712A1CB5FF0049BDEF = {
 			isa = PBXGroup;
 			children = (
 				84F8BB7C2A1CB5FF0049BDEF /* UberClone */,
-				84F8BB8D2A1CB6010049BDEF /* UberCloneTests */,
-				84F8BB972A1CB6010049BDEF /* UberCloneUITests */,
 				84F8BB7B2A1CB5FF0049BDEF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,7 +177,11 @@
 		84F8BB7C2A1CB5FF0049BDEF /* UberClone */ = {
 			isa = PBXGroup;
 			children = (
-				84F8BB7D2A1CB5FF0049BDEF /* UberCloneApp.swift */,
+				846003F32A1FFADD005D3FEA /* Extensions */,
+				846003F22A1FFAD8005D3FEA /* Services */,
+				846003F12A1FFA82005D3FEA /* Core */,
+				846003F02A1FFA7A005D3FEA /* App */,
+				84F8BBA72A1CB6310049BDEF /* Model */,
 				84F8BB7F2A1CB5FF0049BDEF /* ContentView.swift */,
 				84F8BB812A1CB6010049BDEF /* Assets.xcassets */,
 				84F8BB832A1CB6010049BDEF /* Preview Content */,
@@ -110,21 +197,11 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		84F8BB8D2A1CB6010049BDEF /* UberCloneTests */ = {
+		84F8BBA72A1CB6310049BDEF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				84F8BB8E2A1CB6010049BDEF /* UberCloneTests.swift */,
 			);
-			path = UberCloneTests;
-			sourceTree = "<group>";
-		};
-		84F8BB972A1CB6010049BDEF /* UberCloneUITests */ = {
-			isa = PBXGroup;
-			children = (
-				84F8BB982A1CB6010049BDEF /* UberCloneUITests.swift */,
-				84F8BB9A2A1CB6010049BDEF /* UberCloneUITestsLaunchTests.swift */,
-			);
-			path = UberCloneUITests;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +334,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846004002A200821005D3FEA /* ProfileView.swift in Sources */,
 				84F8BB802A1CB5FF0049BDEF /* ContentView.swift in Sources */,
 				84F8BB7E2A1CB5FF0049BDEF /* UberCloneApp.swift in Sources */,
+				846003FE2A1FFE64005D3FEA /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +345,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84F8BB8F2A1CB6010049BDEF /* UberCloneTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +352,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84F8BB9B2A1CB6010049BDEF /* UberCloneUITestsLaunchTests.swift in Sources */,
-				84F8BB992A1CB6010049BDEF /* UberCloneUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
